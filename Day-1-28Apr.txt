@@ -1,0 +1,97 @@
+shrilatat
+192.168.0.19
+DNS
+
+http://www.someserver.com/pages/welcome1.html
+
+HTML - HyperText Markup Language
+
+
+HTTP - Hyper Text Transfer Protocol
+
+
+
+
+
+HTML tags:
+<html>, <head>, <body>, <u>, <i>, <b>
+<br> - Line break
+<h1...h6> - header tags
+
+container tags:
+- <div> - division
+- <p>  paragraph
+- <span>
+
+<hr> - horizonatal ruler
+<ol>, <ul>, <li>
+<img src=?>
+
+<table>, <tr>- table row
+<td> table data
+<th> table heading
+
+<a> - anchor
+
+attributes:
+- optional
+- mandatory
+
+<tag  attrib1=value  attrib1=value attrib1=value  >
+
+
+w3cgroup
+
+
+
+HTML 4 forms:
+Form elements : 9 + 3
+9 form elements: <input type=?>
+
+text-based:
+- text
+- password
+- hidden
+
+button-based:
+- button
+- submit
+- reset
+
+Misc-based:
+- radio
+- checkbox
+- file
+
+<textarea>
+
+
+
+<form method="get"/"post"   action=?>
+
+
+file:///D:/CDAC-Hbad-apr2026/second.html
+file:///D:/CDAC-Hbad-apr2026/second.html
+
+
+
+file:///D:/CDAC-Hbad-apr2026/second.html?uname=Rushub&passwd=rab123
+
+
+GET req: Browser send all info about itself + form info as part of 1 single req header
+
+
+HTTP status code (W3Cgroup):
+1XX  - informational
+2XX - success 200 ok
+3XX - Redirectional 
+4XX - client side error 404
+5XX - server side error 500 Internal error
+
+
+
+
+
+
+
+
