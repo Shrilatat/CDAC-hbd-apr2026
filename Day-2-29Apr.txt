@@ -1,0 +1,91 @@
+Front end technolgies:
+
+HTML
+CSS
+JavaScript
+Bootstrap, Tailwind
+jQuery
+Ajax
+React, angular, Vue, Svelte
+
+
+Backend Tech:
+Java/JEE
+.NET
+PHP
+NodeJS
+
+
+Web Server:
+- Java/JEE : Tomcat, JBoss, Glassfish, JWS, WebLogic, WSAD
+- .NET : IIS
+- PHP : HTTPD
+.....
+
+MIME:
+text/html
+text/plain
+
+image/jpg
+image/gif
+
+audio/wav
+audio/mp3
+
+
+
+HTML 5:
+form attributes:16+ new
+- required
+- placeholder
+- autofocus
+- max
+- min
+- minlength
+- pattern
+
+
+form elements: <input type=?>  9 + 13
+- email
+- number
+- range
+- date ( month, time, .....)
+- color
+- URL
+- tel
+- search
+
+
+
+<img src=?>
+<audio src=? controls>
+<video src=? controls>
+
+CSS Selectors:
+- HTML tag selector : p{...}, tr{....}, li{.....} 
+- ID selector : #<id>{....}
+- class selector : .class-name {.....}, <tag class="class-name">
+
+
+
+JavaScript:
+- Client side validation
+- Event handling
+- DOM manipulation
+
+
+
+Part-1: Lang fundamentals
+Part-2: DOM
+
+
+Part-1: Lang fundamentals
+
+
+
+
+
+
+
+
+
