@@ -1,0 +1,193 @@
+Part-1: Lang fundamentals
+
+
+JS is a loosely typed language
+
+var i = 10;  //number
+var j = 1.234; //number
+var sname = "Om"  //string
+var flag =  true  //boolean
+ 
+
+
+
+<script>
+       function greet(){
+          document.write("Hello User! <br>")
+       }
+
+       greet()
+
+       function greetUser(fname, lname){
+            document.write("Hello " + fname + "," + lname + "<br>")
+       }
+
+       greetUser("Om", "Giratkar")  //func invocation/calling
+
+
+       function add(a,b){
+        return a + b;
+       }
+        document.write("Sum is " + add(10,20))
+
+
+        function isVaccinated(){
+            var v = true
+            if(v)
+               return true
+            else 
+               return false
+        }
+
+    </script>
+
+
+----------------------------------
+
+Block elements vs Inline elements
+
+Block elements : <div> , <p>, <h1...h6> 
+
+Inline elements : <span>, <input>
+
+
+
+<script>
+       //function expressions
+       var a = 10;
+       var b = "Hi";
+       var c = a+10/40*50-100;
+
+       var d = function(){}
+
+       function greet(){   //named function
+          document.write("Hello User! <br>")
+       }
+       
+       var greet1 = function(){
+         document.write("Hello User! <br>")
+       }
+       greet1()
+
+       function greetUser(fname){ //named function
+            document.write("Hello " + fname + "<br>")
+       }
+
+       var greetUser1 = function(uname){
+         document.write("Hello " + uname + "<br>")
+       }
+
+       greetUser1("Om")
+
+
+       function add(a,b){  //named function
+        return a + b;
+       }
+
+       var add1 = function(x, y){
+         return x + y;
+       }
+       document.write("Sum is " + add1(10,20))
+
+
+
+    </script>
+
+
+
+var scopes in JS :
+- global
+- local
+
+
+Functions:
+- User defined function
+- pre defined functions : parseInt(), parseFloat(), isFinite(), isNan()
+
+
+<script>
+      //parseInt()  //camelCase()
+      document.write(parseInt("123") + "<br>") //123
+      document.write(parseInt("123abc") + "<br>") //123
+      document.write(parseInt("123abc456") + "<br>") //123
+      document.write(parseInt("123.45") + "<br>") //123
+      document.write(parseInt("abc123") + "<br>") //NaN
+
+      //parseFloat()
+      document.write(parseFloat("123.45") + "<br>") //123.45
+      document.write(parseFloat("123.0abc") + "<br>") //123.45
+
+    </script>
+
+
+JS objects:
+- Core (predefined) objects
+- User defined objects
+
+
+Rules:
+1) Every JS obj exposes props as well as methods
+
+
+Core (predefined) objects : string, math, array, date, Number, Boolean, RegExp
+
+
+String :
+properties : length, prototype
+methods : charAt(), indexOf(), toUppercase(), toLowerCase(), split(), trim(), startsWith(), endsWith()
+ 
+substr()
+substring()
+slice()
+
+Date:
+methods : getXXX(), setXXX()
+
+<script>
+       
+
+       var d1 = new Date()
+       document.write(d1 + "<br>")
+       document.write(d1.getDate() + "<br>")  //30
+       document.write(d1.getDay() + "<br>")  //4
+       document.write(d1.getFullYear() + "<br>")  //2026
+       document.write(d1.getMonth() + "<br>")  //3
+       document.write(d1.getHours() + "<br>")  //12
+       document.write(d1.getTime() + "<br>")  //12
+
+
+       d1.setDate(21)
+       d1.setFullYear(2030)
+       d1.setMonth(11)
+       d1.setHours(3)
+       document.write(d1 + "<br>")
+
+       var d2 = new Date(1077)
+       document.write(d2 + "<br>")
+
+
+       document.write(Date.now() + "<br>")
+
+
+       
+    </script>
+
+
+
+Math:
+
+
+array:
+props: length, prototype
+methods: push(), pop(), reverse(), sort(), slice(), join()
+
+
+
+
+
+
+
+
+
+
+
