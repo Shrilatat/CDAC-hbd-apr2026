@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        function greet(){   //named function
+          document.write("Hello User! <br>")
+       }
+       
+       var greet1 = function(){
+         document.write("Hello User! <br>")
+       }
+
+       var greet2 = () => document.write("Hello Lambda! <br>")
+       greet2()
+
+       function greetUser(fname){ //named function
+            document.write("Hello " + fname + "<br>")
+       }
+
+       var greetUser1 = function(uname){
+         document.write("Hello " + uname + "<br>")
+       }
+
+       var greetUser2 = (fname, lname) => document.write("Hello " + fname + "," + lname + "<br>")
+       greetUser2("Sakshi", "Khare")
+
+
+
+       function add(a,b){  //named function
+        return a + b;
+       }
+
+       var add1 = function(x, y){
+         return x + y;
+       }
+
+       var add2 = (a,b) => a+b;
+
+       document.write("Sum is " + add2(10,20))
+
+       var strOps = function(str){
+         document.write(str.length + "<br>")
+         document.write(str.toUpperCase() + "<br>")
+         document.write(str.charAt(5) + "<br>")
+       }
+
+       var strOps1 = (str) => {
+         document.write(str.length + "<br>")
+         document.write(str.toUpperCase() + "<br>")
+         document.write(str.charAt(5) + "<br>")
+       }
+
+       strOps1()
+
+
+
+
+
+
+    </script>
+</body>
+</html>
