@@ -1,0 +1,186 @@
+User defined objects: 5 ways:
+- Obj Initializer/literal  (JSON)
+- class
+
+
+Rules:
+1) Every JS obj exposes props as well as methods
+2) All props are read/write
+
+obj.prop
+obj.method()
+
+ES-6 features: let, const, class
+
+
+<script>
+      //Obj Initializer/Literal
+      //JSON : JavaScript Object Notation
+      
+      var student = {name:"Raj", age:22}
+      //console.log(student.name, student.age) //read the props
+
+      student.name = "Mohit"  //write to prop
+      student.age = 24
+      //console.log(student.name, student.age)
+
+
+      var person = {
+        name:"Kaustubh",
+        age:23,
+        graduate:true,
+        hobbies:["singing", "coding", "reading"],
+        address: {city:"Chandrapur", state:"Mah"}
+      }
+
+      //console.log(person.name, person.age, person.graduate)
+      //console.log(person.hobbies[1])
+      //console.log(person.address.state)
+
+
+      var book = {
+        bid:1001,
+        title:"Learning JS",
+        author:"Shrilata",
+        price:450,
+        display: function(){
+            console.log(this.bid, this.title, this.author, this.price)
+        },
+        incrPrice:function(amt){
+            this.price+=amt
+        }
+      }
+
+      //book.display()
+      book.incrPrice(50)
+      //book.display()
+
+
+     var users = [
+        {uid:101, uname:"aaa", age:45},
+        {uid:102, uname:"bbb", age:15},
+        {uid:103, uname:"ccc", age:55},
+        {uid:104, uname:"ddd", age:65}
+     ]
+
+     var str = "<table border='1'>"
+
+     for(user of users){
+        str += "<tr><td>" + user.uid + "</td><td>" + user.uname + "</td><td>" + user.age + "</td></tr>"
+     }
+
+     str += "</table>"
+     document.write(str)
+       
+    </script>
+
+-----------------------------
+
+<script>
+    class Greet {
+      greetUser() {
+        document.write("Hello User!!")
+      }
+    }
+
+    var obj = new Greet()
+    //obj.greetUser()
+
+
+    class Emp {
+      constructor(id, empname) {
+        this.id = id;
+        this.empname = empname;
+      }
+
+      displayEmpDetails() {
+        document.write("ID : " + this.id + "  Emp Name : " + this.empname + "<br>")
+      }
+    }
+
+    var e1 = new Emp(101, "Om");
+    var e2 = new Emp(102, "Shivani");
+    var e3 = new Emp(103, "Sakshi");
+
+    var emparr = [e1, e2, e3];
+    for(emp of emparr){
+      emp.displayEmpDetails();
+    }
+
+
+    class SalariedEmp extends Emp{
+
+      constructor(id, empname, sal, desig){
+        super(id, empname);
+        this.sal = sal;
+        this.desig = desig;
+      }
+
+      displayEmpDetails() {
+        super.displayEmpDetails()
+        document.write("Sal : " + this.sal + "  Designation : " + this.desig + "<br>")
+      }
+    }
+
+    var se1 = new SalariedEmp(1, "aaaa", 50000, "ASE");
+    document.write("-----Salried emp details ---------------<br>")
+    se1.displayEmpDetails()
+
+  </script>
+
+
+-------------------------------------------
+
+Java : ->
+JS : =>
+
+Fat arrow: Rules:
+1) No args : () => stmt-1
+2) Single arg : arg => stmt-1
+3) multiple args : (arg1, arg2) => stmt-1
+4) zero, single, multiple args, but multiple lines:
+    () => {}
+
+
+
+Part-2: DOM  (Document Object Model)
+
+
+setInterval() - call a func again and again after every interval
+setTimeout() - call a func once but after a time period has elapsed
+
+
+function f1(){
+.....
+}
+
+f1()
+
+
+Higher order functions: function that calls another function
+
+func1(func2)
+
+setInterval(f1, 1000)
+setTimeout(f1, 1000)
+
+
+<tag>  </tag>
+
+<p></p>
+
+<span></span>
+
+<div></div>
+
+
+JS property:
+value : when i am dealing with form elements
+innerHTML :  when i am dealing with all other elements
+
+
+
+
+
+
+
