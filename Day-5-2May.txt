@@ -1,0 +1,178 @@
+<head>
+    <script>
+        function f1(){
+            var plist =document.getElementsByTagName("p")
+            for(para of plist)
+                para.innerHTML = "New Content"
+            
+        }
+    </script>
+   
+</head>
+<body>
+    <p>This is para-1</p>
+    <p>This is para-2</p>
+    <p>This is para-3</p>
+    <p>This is para-4</p>
+    <button onclick="f1()">Click Me!</button>
+</body>
+
+
+----------------------------------
+
+<head>
+    <script>
+        function f1(){
+            var plist =document.getElementsByClassName("a1")
+            for(para of plist){
+                para.innerHTML = "New Content"
+                para.style.color = "blue"
+            }
+        }
+    </script>
+   
+</head>
+<body>
+    <h1 class="a1">Welcome</h1>
+    <p>This is para-1</p>
+    <p class="a1">This is para-2</p>
+    <p>This is para-3</p>
+    <div>This is div</div>
+    <p>This is para-4</p>
+    <h3 class="a1">This is hedaer3</h3>
+    <button onclick="f1()">Click Me!</button>
+</body>
+
+--------------------------------------
+
+<body>
+    <form>
+        <h2>Choose your course</h2>
+        <input type="radio" name="course" value="ccst">CCST
+        <input type="radio" name="course" value="dac">PG-DAC
+        <input type="radio" name="course" value="dbda">DBDA
+        <input type="radio" name="course" value="ditiss">DITISS
+        <br>
+        <button type="button" id="btn">Click</button>
+
+        <script>
+            var btn = document.getElementById("btn")
+            btn.onclick = ()=>{
+                var rlist = document.getElementsByName("course")
+                for(rad of rlist){
+                    if(rad.checked){
+                        console.log("you selected", rad.value)
+                    }
+                }
+            }
+        </script>
+    </form>
+
+
+------------------------------------------
+
+
+Form validation :
+- form-level validation
+- field-level validation
+
+
+zip code : 
+ad no : xxxx xxxx xxxx xxxx
+ph no (xx)-xxxxxxxxxx
+
+
+var s1 = "hello"
+var s2 = new String("Hello")
+
+
+var re = //
+var re = new RegExp()
+
+
+
+
+var str = "Java is great"
+
+var re = /^[a-zA-Z]*$/
+
+
+
+
+
+/H[^aeiou]t/
+
+Hat
+Hut
+Hit
+Hot
+Het
+
+
+/^\d\d\d\d\d\d\d\d\d$/
+
+
+/^\d{10}$/
+
+
+
+<canvas></canvas>
+
+
+
+
+getCurrentPosition(showPosition, handleError)
+
+
+function showPosition(position){
+  //extract the coordinates
+}
+
+
+function handleError(){
+  //handle error
+}
+
+
+
+
+XML - store, structure and transport
+parsing XML 
+
+JSON : store, structure and transport
+parsing json
+
+
+
+
+
+
+
+
+
+
+parseInt("123")
+
+
+SPA - Single Page Application
+
+AJAX : Async Javascript and XML
+
+HTML
+CSS
+JavaScript
+DOM
+XML
+XHR
+
+
+
+
+
+
+
+
+
+
+
+

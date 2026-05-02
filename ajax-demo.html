@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <button onclick="f1()">Fetch Todos</button>
+    <p id="p1"></p>
+
+    <script>
+        function f1(){
+            //step-1 : Create XHR object
+            var xmlhttp = new XMLHttpRequest();
+
+            //step-2 : obtain a connection to server
+            //xmlhttp.open(HTTP-method, url)
+            xmlhttp.open("get", "http://jsonplaceholder.typicode.com/todos")
+
+            //step-3 : send the req
+            xmlhttp.send()
+
+            //step-4 : receive data and display
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.status == 200 && xmlhttp.readyState == 4)
+                   console.log(xmlhttp.responseText)
+            }
+
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>
